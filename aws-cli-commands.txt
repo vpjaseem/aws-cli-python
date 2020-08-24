@@ -1,0 +1,8 @@
+1. Launch EC2 Instance
+aws ec2 run-instances --image-id ami-03dbf9550d4620230 --count 1 --instance-type t2.micro --key-name aws-windows --security-group-ids sg-03bc17a19529ccc88 --subnet-id subnet-05bd2cc86c1e09ec5
+
+2. Stop EC2 Instance
+aws ec2 stop-instances --instance-ids i-0a998993c7e1e334b
+
+3. Terminate EC2 Instance
+aws ec2 terminate-instances --instance-ids i-0a998993c7e1e334b
