@@ -1,5 +1,5 @@
 import boto3
-ec2 = boto3.resource('ec2')
+ec2 = boto3.resource('ec2', region_name='ap-south-1')
 
 # create a new EC2 instance
 instances = ec2.create_instances(
